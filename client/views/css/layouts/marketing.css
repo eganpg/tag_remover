@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+.contact_us {
+    width: 50%;
+    margin-left: 25%;
+}
 /*
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.

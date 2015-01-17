@@ -76,4 +76,8 @@ Template.home.rendered = function () {
 
     return true;
   });
+  $('.photo').click(function(){
+    MeteorCamera.getPicture([options], callback)
+    alert('call photo and ping location');
+  });
 };

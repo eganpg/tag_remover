@@ -21,7 +21,7 @@ useraccounts:semantic-ui
 natestrauser:animate-css
 dburles:collection-helpers
 meteorhacks:fast-render
-
 nooitaf:semantic-ui
 lampe:purecss
 mdg:camera
+mdg:geolocation

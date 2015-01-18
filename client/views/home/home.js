@@ -1,4 +1,6 @@
+
 Template.home.helpers({
+  
   'feature' : function () {
     return [
       { 'text' : 'Uses trusted packages', 'icon' : 'archive', 'path' : '#packages' },
@@ -59,7 +61,9 @@ Template.home.helpers({
 Template.home.events({
 });
 
-
+Template.home.helpers({
+    
+  });
 Template.home.rendered = function () {
   // @see: http://stackoverflow.com/questions/5284814/jquery-scroll-to-div
   $('a[href*=#]:not([href=#])').click(function () {
@@ -77,7 +81,21 @@ Template.home.rendered = function () {
     return true;
   });
   $('.photo').click(function(){
-    MeteorCamera.getPicture([options], callback)
-    alert('call photo and ping location');
+      
+      
+      MeteorCamera.getPicture(
+        function(data){ Session.set("picture", res); },
+
+        function(err){ console.log(err); },
+
+        {
+          quality: 50
+          
+        }
+      );
+
+    
   });
-};
+
+
+  }
